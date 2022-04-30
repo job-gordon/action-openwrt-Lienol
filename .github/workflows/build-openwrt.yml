@@ -73,7 +73,6 @@ jobs:
          sudo -E rm -rf $GITHUB_WORKSPACE/openwrt/feeds
          cd $GITHUB_WORKSPACE/openwrt && ./scripts/feeds update -a
          cd $GITHUB_WORKSPACE/openwrt && ./scripts/feeds install -a
-         cd $GITHUB_WORKSPACE/openwrt && ./scripts/feeds install -a
 
     - name: Load custom configuration
       run: |
